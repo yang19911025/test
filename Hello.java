@@ -15,9 +15,9 @@ public class Hello extends HttpServlet {
     String name = req.getParameter("name");
     String name2=new String(name.getBytes("ISO-8859-1"), "Big5");  
     out.println("<HTML>");
-    out.println("<HEAD><TITLE>Hello, " + name2 + "</TITLE></HEAD>");
+    out.println("<HEAD><TITLE>Hello, " + name1 + "</TITLE></HEAD>");
     out.println("<BODY>");
-    out.println("Hello, 你好: " + name2);
+    out.println("Hello, 你好: " + name1);
     
     out.println("<br><img src=\""+req.getContextPath()+"/images/tomcat.gif\">");
     
